@@ -1,0 +1,16 @@
+Package: gitr
+Type: Package
+Title: An R Interface for Git Commands
+Version: 0.0.0.9000
+Authors@R:
+    c(person(given = "Grayson",
+             family = "White",
+             role = c("aut", "cre"),
+             email = "graysonwhite13@gmail.com",
+             comment = c(ORCID = "0000-0003-4993-2792")))
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
