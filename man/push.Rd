@@ -9,6 +9,16 @@ push(...)
 \arguments{
 \item{...}{Currently ignored. For extendability.}
 }
+\value{
+Pushes local commits
+}
 \description{
 Push local commits
+}
+\examples{
+\dontrun{
+file.create("new_file.txt")
+commit("new_file.txt")
+push()
+}
 }

@@ -4,8 +4,11 @@
 #'
 #' @param ... Currently ignored. For extendability.
 #'
-#' @return
+#' @return Pulls changes not yet on local device
 #' @examples
+#' \dontrun{
+#' pull()
+#' }
 #' @export
 pull <- function(...) {
   system(

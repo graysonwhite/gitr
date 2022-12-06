@@ -7,10 +7,19 @@
 add(files = NULL, ...)
 }
 \arguments{
-\item{files}{File(s) to add}
+\item{files}{Character vector of file(s) to add.}
 
 \item{...}{Currently ignored. For extendability.}
 }
+\value{
+Adds files
+}
 \description{
 Add a file
+}
+\examples{
+\dontrun{
+file.create("new_file.txt")
+add("new_file.txt")
+}
 }

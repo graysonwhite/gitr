@@ -9,6 +9,14 @@ pull(...)
 \arguments{
 \item{...}{Currently ignored. For extendability.}
 }
+\value{
+Pulls changes not yet on local device
+}
 \description{
 Pull
+}
+\examples{
+\dontrun{
+pull()
+}
 }
