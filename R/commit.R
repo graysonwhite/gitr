@@ -1,6 +1,7 @@
 #' @export
-commit <- function(file = NULL) {
+commit <- function(message,
+                   file = NULL) {
   system(
-    command = paste("git commit", file)
+    command = paste0("git commit -m ", "'", message, "' ", file)
   )
 }
