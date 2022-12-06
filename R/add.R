@@ -1,6 +1,6 @@
 #' @export
-add <- function() {
+add <- function(file = NULL) {
   system(
-    command = "git add"
+    command = paste("git add", file)
   )
 }

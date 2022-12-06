@@ -1,6 +1,6 @@
 #' @export
-commit <- function() {
+commit <- function(file = NULL) {
   system(
-    command = "git commit"
+    command = paste("git commit", file)
   )
 }
