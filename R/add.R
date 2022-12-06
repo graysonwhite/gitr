@@ -13,5 +13,4 @@ add <- function(files = NULL,
   system(
     command = paste("git add", files)
   )
-
 }
