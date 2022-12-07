@@ -23,9 +23,10 @@ devtools::install_github("graysonwhite/gitr")
 Currently, `gitr` has four functions:  
 - `add()` takes a character vector of file names and calls `git add` on
 those files to add them to the Git index.  
-- `commit()` calls `git commit` and will, by default, add all new or
-changed files to the Git index. This behavior can be changed in the
-function parameters.  
+- `commit()` calls `git commit` and can either add all new or changed
+files to the Git index by setting `add_all = TRUE`, add a specific set
+of files to the Git index with the `files` argument, or will just commit
+files already `add()`ed to the Git index by default.  
 - `push()` calls `git push`.  
 - `pull()` calls `git pull`.
 
