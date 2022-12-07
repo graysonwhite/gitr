@@ -31,29 +31,28 @@ function parameters.
 
 ## Simple example
 
-Suppose your working directory is a Git repository with changed and new
-files `my_function.R`, `text.txt`, and `docs.md`. If you wanted to
-commit and push these files in R you could:
+Suppose your working directory is a Git repository with locally changed
+and/or new files `my_function.R`, `text.txt`, and `docs.md`. If you
+wanted to commit and push these files in R you could:
 
 ``` r
 library(gitr)
 
-commit(messsage = "My snazzy commit message")
+commit(messsage = "My snazzy commit message",
+       add_all = TRUE)
 
 push()
 ```
 
 However, you may want to only commit one of these files, or use multiple
-commits. `gitr` can accommodate this, as well:
+commits. `gitr` can accommodate this scenario as well:
 
 ``` r
 # First, commit two files
 commit("My first commit message",
-       add_all = FALSE,
        files = c("text.txt", "docs.md"))
 
 commit("add my function",
-       add_all = FALSE,
        files = "my_function.R")
 
 push()
@@ -63,12 +62,16 @@ push()
 `push()` them, like so:
 
 ``` r
-file.create("some_new_file.txt")
-
 add("some_new_file.txt")
 
-commit(message = "add some new file",
-       add_all = FALSE)
+commit(message = "add some new file")
 
 push()
+```
+
+If you’d like to pull remote changes from a repository, `gitr` also
+makes this easy with the `pull()` function:
+
+``` r
+pull()
 ```
