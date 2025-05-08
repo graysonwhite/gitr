@@ -1,26 +1,26 @@
 
-# gitr
+# grit
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-`gitr` is an R package that provides an R wrapper for Git commands.
-Currently, `gitr` is under development and should be used at your own
+`grit` is an R package that provides an R wrapper for Git commands.
+Currently, `grit` is under development and should be used at your own
 risk.
 
 ## Installation
 
-You can install the development version of gitr from
+You can install the development version of grit from
 [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("graysonwhite/gitr")
+devtools::install_github("graysonwhite/grit")
 ```
 
 ## Current features
 
-Currently, `gitr` has four functions:  
+Currently, `grit` has four functions:  
 - `add()` takes a character vector of file names and calls `git add` on
 those files to add them to the Git index.  
 - `commit()` calls `git commit` and can either add all new or changed
@@ -37,7 +37,7 @@ and/or new files `my_function.R`, `text.txt`, and `docs.md`. If you
 wanted to commit and push these files in R you could:
 
 ``` r
-library(gitr)
+library(grit)
 
 commit(messsage = "My snazzy commit message",
        add_all = TRUE)
@@ -46,7 +46,7 @@ push()
 ```
 
 However, you may want to only commit one of these files, or use multiple
-commits. `gitr` can accommodate this scenario as well:
+commits. `grit` can accommodate this scenario as well:
 
 ``` r
 # First, commit two files
@@ -59,7 +59,7 @@ commit("add my function",
 push()
 ```
 
-`gitr` can also add files manually with `add()`, and then `commit()` and
+`grit` can also add files manually with `add()`, and then `commit()` and
 `push()` them, like so:
 
 ``` r
@@ -70,7 +70,7 @@ commit(message = "add some new file")
 push()
 ```
 
-If you’d like to pull remote changes from a repository, `gitr` also
+If you’d like to pull remote changes from a repository, `grit` also
 makes this easy with the `pull()` function:
 
 ``` r

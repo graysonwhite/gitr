@@ -1,4 +1,4 @@
-Package: gitr
+Package: grit
 Type: Package
 Title: An R Interface for Git Commands
 Version: 0.0.0.9000

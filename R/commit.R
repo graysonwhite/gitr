@@ -54,7 +54,7 @@ commit <- function(message,
                             "'", message, "' ",
                             files_string))
   } else {
-    # Commits files already added, either with gitr::add() or git add
+    # Commits files already added, either with grit::add() or git add
     system(command = paste0("git commit -m ",
                             "'", message, "' "))
   }
